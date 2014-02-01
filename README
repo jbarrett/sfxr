@@ -1,0 +1,8 @@
+sfxr project:
+
+http://www.drpetter.se/project_sfxr.html
+
+The purpose of this fork is to add a command line tool (sfxr2wav) to export sfxr save files to wavs, for use in build systems and such.
+
+sfxr save file blobs should be much smaller to keep in revision control.
+
