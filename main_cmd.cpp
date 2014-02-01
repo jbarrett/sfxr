@@ -27,7 +27,7 @@ int main(int argc, char*argv[]) {
     }
 
     if (!strncmp(wav_file, sfxr_file, PATH_MAX)) {
-        fprintf(stderr, "Input and output files are same\n%s -> %s\n", sfxr_file, wav_file);
+        fprintf(stderr, "%s and %s are the same, not creating wav\n", sfxr_file, wav_file);
         usage();
         exit(-1);
     }
@@ -39,7 +39,7 @@ int main(int argc, char*argv[]) {
     }
 
     if (ExportWAV(wav_file) == false) {
-        fprintf(stderr, "Problem writing wav file %s\n", wav_file);
+        fprintf(stderr, "Cannot write wav file %s\n", wav_file);
         usage();
         exit(-1);
     }
